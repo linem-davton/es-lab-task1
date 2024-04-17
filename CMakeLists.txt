@@ -13,7 +13,7 @@ set(CMAKE_BUILD_TYPE Debug)
 
 # Add include directories if there are any
 include_directories(include)
-include_directories(libs/boost_1_84_0 libs/nlohmann)
+include_directories(libs/boost libs/nlohmann)
 
 # Adding Executables
 add_executable (simulator src/main.cpp src/simulator.cpp src/controller.cpp src/server.cpp)

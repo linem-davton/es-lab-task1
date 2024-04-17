@@ -34,13 +34,13 @@ To install the simulator, follow these steps:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone <proj-dir>
+    git clone git@github.com:linem-davton/es-lab-task1.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd <proj-dir>
+    cd es-lab-task1
     ```
 
 3. Create a build and libs directory in the project directory
@@ -48,10 +48,11 @@ To install the simulator, follow these steps:
     ```bash
     mkdir build
     mkdir libs
+    mkdir libs/nlohmann
     ```
 
-4. Place the unzipped boost dir in the *<proj-dir>/libs* directory
-5. Place the json.hpp file in the *<proj-dir>/libs/nlohmann* directory
+4. Rename the unzipped boost directory to boost in the es-lab-task1/libs directory
+5. Place the json.hpp file in the es-lab-task1/libs/nlohmann directory
 
 6. Navigate to the build directory:
 
@@ -80,7 +81,7 @@ To use the simulator, follow these steps:
 1. Navigate to the build directory where the project was built:
 
     ```bash
-    cd <proj-dir>/build
+    cd es-lab-task1/build
     ```
 
 2. Run the simulator binary:
@@ -89,13 +90,15 @@ To use the simulator, follow these steps:
     ./simulator
     ```
 
-3. Download the frontend code can be from [github](https://github.com/linem-davton/inverted_pendulum_frontend/releases/tag/v1.0.0)
+3. Download the frontend code from [github](https://github.com/linem-davton/inverted_pendulum_frontend/releases/tag/v1.0.0)
 
-4. Open a web browser and navigate to the frontend server address (default: `http://localhost:3000`).
+5. Follow the instructions in the frontend README to start the frontend server.
 
-5. Use the web interface to control and monitor the simulation parameters. You can start, stop, and adjust the simulation settings as needed.
+6. Open a web browser and navigate to the frontend server address (default: `http://localhost:3000`).
 
-6. Interact with the simulator via the web interface to observe the behavior of the inverted pendulum system under different control conditions.
+7. Use the web interface to control and monitor the simulation parameters. You can start, stop, and adjust the simulation settings as needed.
+
+8. Interact with the simulator via the web interface to observe the behavior of the inverted pendulum system under different control conditions.
 
 By following these steps, you can run the simulator and control it using the web interface provided by the frontend server.
 
