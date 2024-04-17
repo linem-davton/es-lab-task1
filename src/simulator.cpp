@@ -37,13 +37,13 @@ void Simulator::run_simulator() {
       // parameters cannot be updated in the middle of time step
       std::lock_guard<std::mutex> lock(g_start_mutex);
 
-      ///@todo implement delay and jitter by changing delay index based on
+      ///@todo Implement delay and jitter by changing delay index based on
       /// SimParams.delay and SimParams.jitter
       delay_index = i - 1; // delay of one time step
 
-      ///@todo handle case when delay index is negative, wrap around to end of
-      ///circular buffer
-      ///@todo make sure delay index is within bounds of buffer size
+      ///@todo Handle case when delay index is negative, wrap around to end of
+      /// circular buffer
+      ///@todo Make sure delay index is within bounds of buffer size
 
       error = m_params.ref_angle - theta.at(delay_index);
       F = m_controller->output(-error);

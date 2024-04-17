@@ -16,13 +16,13 @@
 PIDController::PIDController() { update_params(kp, kd, ki); }
 
 void PIDController::setClamp(double max, double min) {
-  ///@todo implement setClamp for setting the output limits
+  ///@todo Implement setClamp for setting the output limits
 }
 
 double PIDController::output(double error) {
-  ///@todo implement the PID controller output calculation
+  ///@todo Implement the PID controller output calculation
 }
 
 void PIDController::update_params(double kp_, double kd_, double ki_) {
-  ///@todo implement the update_params function for PID controller
+  ///@todo Implement the update_params function for PID controller
 }
