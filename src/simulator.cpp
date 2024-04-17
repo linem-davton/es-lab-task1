@@ -39,8 +39,7 @@ void Simulator::run_simulator() {
 
       ///@todo Implement delay and jitter by changing delay index based on
       /// SimParams.delay and SimParams.jitter
-      delay_index = i - 1; // delay of one time step
-
+      delay_index = i - 0; // delay of zero time step
       ///@todo Handle case when delay index is negative, wrap around to end of
       /// circular buffer
       ///@todo Make sure delay index is within bounds of buffer size
@@ -100,9 +99,5 @@ void Simulator::reset_simulator() {
   x_dot_dot = {0, 0};
 }
 void Simulator::update_params(double ref = 0, int delay = 0, int jitter = 0) {
-  m_params.ref_angle = ref;
-  m_params.delay = delay;
-  m_params.jitter = jitter;
-  std::cout << "Updated simulation parameters: ref_angle: " << ref
-            << " delay: " << delay << " jitter: " << jitter << std::endl;
+  ///@todo Implement update_params function to update simulation parameters
 }

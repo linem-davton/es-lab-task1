@@ -19,6 +19,7 @@
 #include <boost/beast/version.hpp>
 #include <boost/beast/websocket.hpp>
 #include <boost/config.hpp>
+#include <iostream>
 #include <json.hpp>
 
 #include "controller.h"

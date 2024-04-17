@@ -88,6 +88,8 @@ void CommServer::handle_request(tcp::socket &socket) {
   if (req.method() == http::verb::post) {
     if (req.target() == "/pid") {
       json pid = json::parse(req.body());
+      std::cout << "Received PID parameters: kp: " << pid["kp"]
+                << " ki: " << pid["ki"] << " kd: " << pid["kd"] << std::endl;
       std::lock_guard<std::mutex> lock(sim.g_start_mutex);
       sim.m_controller->update_params(pid["kp"], pid["ki"], pid["kd"]);
     }
@@ -107,6 +109,9 @@ void CommServer::handle_request(tcp::socket &socket) {
     }
     if (req.target() == "/params") {
       json params = json::parse(req.body());
+      std::cout << "Received simulation parameters: ref: " << params["ref"]
+                << " delay: " << params["delay"]
+                << " jitter: " << params["jitter"] << std::endl;
       std::lock_guard<std::mutex> lock(sim.g_start_mutex);
       sim.update_params(params["ref"], params["delay"], params["jitter"]);
     }

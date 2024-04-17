@@ -75,6 +75,9 @@ public:
    * Initializes the PID controller with default proportional, derivative,
    * and integral gains.
    */
+  double kp = 0.0;
+  double kd = 0.0;
+  double ki = 0.0;
   PIDController();
 
   /**

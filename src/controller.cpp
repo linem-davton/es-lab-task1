@@ -21,6 +21,7 @@ void PIDController::setClamp(double max, double min) {
 
 double PIDController::output(double error) {
   ///@todo Implement the PID controller output calculation
+  return 0;
 }
 
 void PIDController::update_params(double kp_, double kd_, double ki_) {
