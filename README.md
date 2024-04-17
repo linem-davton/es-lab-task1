@@ -90,10 +90,20 @@ To use the simulator, follow these steps:
     ./simulator
     ```
 
-3. Download the frontend code from [github](https://github.com/linem-davton/inverted_pendulum_frontend/releases/tag/v1.0.0)
+3. Download the frontend  from [github](https://github.com/linem-davton/inverted_pendulum_frontend/releases)
 
 5. Follow the instructions in the frontend README to start the frontend server.
 
+  - Install npm and serve package and run the serve command in the dist directory
+   
+```BASH
+      npm install -g serve
+      serve
+    ```
+  - On Windows, runinng `serve` in powsershell mau require the following command to be run first
+  ```BASH
+        Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+      ```
 6. Open a web browser and navigate to the frontend server address (default: `http://localhost:3000`).
 
 7. Use the web interface to control and monitor the simulation parameters. You can start, stop, and adjust the simulation settings as needed.

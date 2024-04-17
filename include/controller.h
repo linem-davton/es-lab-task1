@@ -78,6 +78,8 @@ public:
   double kp = 0.0;
   double kd = 0.0;
   double ki = 0.0;
+  ///@todo Intialize paramaters for discrete PID controller
+
   PIDController();
 
   /**
