@@ -1,5 +1,5 @@
 
-# Simulation for PID Control of Inverted Pendulum
+# Getting Started
 
 ## Table of Contents
 
