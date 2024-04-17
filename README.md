@@ -92,23 +92,23 @@ To use the simulator, follow these steps:
 
 3. Download the frontend  from [github](https://github.com/linem-davton/inverted_pendulum_frontend/releases)
 
-5. Follow the instructions in the frontend README to start the frontend server.
+4. Follow the instructions in the frontend README to start the frontend server.
 
   - Install npm and serve package and run the serve command in the dist directory
    
 ```BASH
       npm install -g serve
       serve
-    ```
+```
   - On Windows, runinng `serve` in powsershell mau require the following command to be run first
-  ```BASH
-        Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
-      ```
-6. Open a web browser and navigate to the frontend server address (default: `http://localhost:3000`).
+```BASH
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+```
+5. Open a web browser and navigate to the frontend server address (default: `http://localhost:3000`).
 
-7. Use the web interface to control and monitor the simulation parameters. You can start, stop, and adjust the simulation settings as needed.
+6. Use the web interface to control and monitor the simulation parameters. You can start, stop, and adjust the simulation settings as needed.
 
-8. Interact with the simulator via the web interface to observe the behavior of the inverted pendulum system under different control conditions.
+7. Interact with the simulator via the web interface to observe the behavior of the inverted pendulum system under different control conditions.
 
 By following these steps, you can run the simulator and control it using the web interface provided by the frontend server.
 
