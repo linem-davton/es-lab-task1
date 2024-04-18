@@ -10,9 +10,14 @@
 
 ## Introduction
 
-A C++ simulator that implements PID control for an inverted pendulum system. It provides a simulation environment where the user can test and evaluate different PID controller parameters to stabilize the inverted pendulum.
+A C++ simulator that implements PID control for an inverted pendulum system.
+It provides a simulation environment where the user can test and evaluate
+different PID controller parameters to stabilize the inverted pendulum.
 
-The simulator also includes an HTTP server component that allows external control and monitoring of the simulation parameters via frontend requests. This enables users to interact with the simulation in real-time through a web-based interface.
+The simulator also includes an HTTP server component that allows
+external control and monitoring of the simulation parameters via frontend requests.
+This enables users to interact with the simulation
+in real-time through a web-based interface.
 
 ## Features
 
@@ -21,7 +26,7 @@ The simulator also includes an HTTP server component that allows external contro
 - Real-time visualization and monitoring of simulation.
 - HTTP server for remote control and monitoring via web interface.
 
-## Dependencies 
+## Dependencies
 
 - CMake - For building the project .
 - Boost - For HTTP server, relase version can be downloaded from [boost website](https://www.boost.org/users/download/)
@@ -51,7 +56,8 @@ To install the simulator, follow these steps:
     mkdir libs/nlohmann
     ```
 
-4. Rename the unzipped boost directory to boost in the es-lab-task1/libs directory
+4. Rename the unzipped boost library folder to boost
+  and place it in es-lab-task1/libs directory
 5. Place the json.hpp file in the es-lab-task1/libs/nlohmann directory
 
 6. Navigate to the build directory:
@@ -68,11 +74,18 @@ To install the simulator, follow these steps:
 
 8. Build the project:
 
-    ```bash
-    make
-    ```
+Linux:
 
-If you encounter any issues during the build process, please check the dependencies and ensure that they are correctly installed and configured. Make sure CMakeLists.txt is correctly configured to include the required libraries.
+```bash
+    make
+```
+
+Windows:
+    - Use Visual Studio to open the project and build the solution.
+
+If you encounter any issues during the build process,
+please check the dependencies and ensure that they are correctly installed and configured.
+Make sure CMakeLists.txt is correctly configured to include the required libraries.
 
 ## Usage
 
@@ -90,25 +103,37 @@ To use the simulator, follow these steps:
     ./simulator
     ```
 
-3. Download the frontend  from [github](https://github.com/linem-davton/inverted_pendulum_frontend/releases)
+3. Go to [eslab1.pages.dev](https://eslab1.pages.dev)
 
-4. Follow the instructions in the frontend README to start the frontend server.
+4. Use the web interface to control and monitor the simulation parameters.
+  You can start, stop, and adjust the simulation settings as needed.
 
-  - Install npm and serve package and run the serve command in the dist directory
-   
+5. Interact with the simulator via the web interface
+  to observe the behavior of the inverted pendulum system
+  under different control conditions.
+
+Alternatively, you can run the simulator with the frontend server locally
+to control and monitor the simulation via a web interface:
+
+1. Download the frontend  from [github](https://github.com/linem-davton/inverted_pendulum_frontend/releases)
+
+2. Follow the instructions in the frontend README to start the frontend server.
+
+- Install npm and serve package and run the serve command in the dist directory
+
 ```BASH
       npm install -g serve
       serve
 ```
-  - On Windows, runinng `serve` in powsershell mau require the following command to be run first
+
+- On Windows, runinng `serve` in powsershell may require
+  the following command to be run first
+
 ```BASH
     Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 ```
-5. Open a web browser and navigate to the frontend server address (default: `http://localhost:3000`).
 
-6. Use the web interface to control and monitor the simulation parameters. You can start, stop, and adjust the simulation settings as needed.
+3. Open a web browser and navigate to the frontend server address (default: `http://localhost:3000`).
 
-7. Interact with the simulator via the web interface to observe the behavior of the inverted pendulum system under different control conditions.
-
-By following these steps, you can run the simulator and control it using the web interface provided by the frontend server.
-
+By following these steps, you can run the simulator and control it
+using the web interface provided by the frontend server.

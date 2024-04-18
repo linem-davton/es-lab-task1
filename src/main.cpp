@@ -34,8 +34,9 @@ int main() {
   std::jthread sim_thread(&Simulator::run_simulator,
                           std::ref(sim)); ///< Start the simulation thread
 
-  std::jthread comm_thread(&CommServer::start_server,
-                           &comm); ///< Start the communication server thread
+  std::jthread comm_thread(
+      &CommServer::start_server,
+      std::ref(comm)); ///< Start the communication server thread
 
   sim_thread.join();
   comm_thread.join(); ///< Wait for the threads to finish

@@ -80,7 +80,7 @@ void Simulator::run_simulator() {
       T += m_params.delta_t;
       i = j;
     }
-    std::this_thread::sleep_for(std::chrono::microseconds(50));
+    std::this_thread::sleep_for(std::chrono::microseconds(200));
   }
 }
 void Simulator::reset_simulator() {
