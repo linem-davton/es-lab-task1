@@ -137,3 +137,6 @@ to control and monitor the simulation via a web interface:
 
 By following these steps, you can run the simulator and control it
 using the web interface provided by the frontend server.
+## Documentation
+
+Code documentation can be found at [eslab1doc](https://eslab1docs.pages.dev/)
