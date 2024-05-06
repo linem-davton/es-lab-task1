@@ -27,3 +27,7 @@ double PIDController::output(double error) {
 void PIDController::update_params(double kp_, double kd_, double ki_) {
   ///@todo Implement the update_params function for PID controller
 }
+void PIDController::reset() {
+  ///@todo Implement the reset function for PID controller called by simulator
+  /// when simulation is reset
+}

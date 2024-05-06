@@ -45,6 +45,14 @@ public:
    * @param ki The integral gain.
    */
   virtual void update_params(double kp, double kd, double ki) = 0;
+  /**
+   * @brief Resets the controller to its initial state.
+   *
+   * This method resets the controller to its initial state, clearing any
+   * internal state variables and data.
+   */
+
+  virtual void reset() = 0;
 
   /**
    * @brief Sets the clamping limits for the control output.
@@ -105,6 +113,13 @@ public:
    * @param ki The new integral gain.
    */
   void update_params(double kp, double kd, double ki);
+  /**
+   * @brief Resets the PID controller to its initial state.
+   *
+   * This method resets the PID controller to its initial state, clearing any
+   * internal state variables and data.
+   */
+  void reset();
   /**
    * @brief Sets the clamping limits for the control output.
    *

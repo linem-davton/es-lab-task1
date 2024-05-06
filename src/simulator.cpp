@@ -97,6 +97,7 @@ void Simulator::reset_simulator() {
   x = {0, 0}; // position of cart
   x_dot = {0, 0};
   x_dot_dot = {0, 0};
+  m_controller->reset();
 }
 void Simulator::update_params(double ref = 0, int delay = 0, int jitter = 0) {
   ///@todo Implement update_params function to update simulation parameters
