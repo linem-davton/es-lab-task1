@@ -3,3 +3,4 @@ html/
 build/
 libs/
 doxygen-awesome-css/
+.vscode/

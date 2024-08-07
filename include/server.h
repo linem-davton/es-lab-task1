@@ -49,7 +49,7 @@ class CommServer {
 
   net::ip::address address{
       net::ip::make_address("0.0.0.0")}; ///< Binds on all interfaces
-  unsigned short port{8080};             ///< Server Port
+  unsigned short port{8000};             ///< Server Port
   tcp::acceptor
       acceptor; ///< The acceptor is used to listen for incoming connections
 public:
