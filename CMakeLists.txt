@@ -2,6 +2,7 @@
 # Always start with these two
 cmake_minimum_required(VERSION 3.0)
 project(Inverted_Pendulum)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Setting C++ standard and Forcing
 set(CMAKE_CXX_STANDARD 20)

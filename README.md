@@ -1,4 +1,3 @@
-
 # Getting Started
 
 ## Table of Contents
@@ -30,58 +29,58 @@ in real-time through a web-based interface.
 
 - CMake - For building the project .
 - Boost - For HTTP server, relase version can be downloaded from [boost website](https://www.boost.org/users/download/)
-- nlohmann/json - json.hpp file  can be downloaded from [github](https://github.com/nlohmann/json/releases/tag/v3.11.3)
+- nlohmann/json - json.hpp file can be downloaded from [github](https://github.com/nlohmann/json/releases/tag/v3.11.3)
 
 ## Building the Project
 
+### Linux
+
 To install the simulator, follow these steps:
 
-1. Clone the repository to your local machine:
+- Clone the repository to your local machine:
 
-    ```bash
-    git clone git@github.com:linem-davton/es-lab-task1.git
-    ```
+  ```bash
+  git clone git@github.com:linem-davton/es-lab-task1.git
+  ```
 
-2. Navigate to the project directory:
+- Navigate to the project directory:
 
-    ```bash
-    cd es-lab-task1
-    ```
+  ```bash
+  cd es-lab-task1
+  ```
 
-3. Create a build and libs directory in the project directory
+- Run the setup script to download the required dependencies:
 
-    ```bash
-    mkdir build
-    mkdir libs
-    mkdir libs/nlohmann
-    ```
+  ```bash
+  ./setup.sh
+  ```
 
-4. Rename the unzipped boost library folder to boost
-  and place it in es-lab-task1/libs directory
-5. Place the json.hpp file in the es-lab-task1/libs/nlohmann directory
+- Navigate to the build directory:
 
-6. Navigate to the build directory:
+  ```bash
+  cd build
+  ```
 
-    ```bash
-    cd build
-    ```
+- Configure the project with CMake:
 
-7. Configure the project with CMake:
-
-    ```bash
-    cmake ..
-    ```
+  ```bash
+  cmake ..
+  ```
 
 8. Build the project:
 
 Linux:
 
 ```bash
-    make
+    make - j4
 ```
 
-Windows:
-    - Use Visual Studio to open the project and build the solution.
+## Windows
+
+Use Visual Studio to open the project and build the solution.
+
+Make sure you have downloaded and the required dependencies and put them in the correct directories.
+For boost, it should be under lib/boost and for json.hpp it should be under include/nlohmann/json.hpp
 
 If you encounter any issues during the build process,
 please check the dependencies and ensure that they are correctly installed and configured.
@@ -93,29 +92,29 @@ To use the simulator, follow these steps:
 
 1. Navigate to the build directory where the project was built:
 
-    ```bash
-    cd es-lab-task1/build
-    ```
+   ```bash
+   cd es-lab-task1/build
+   ```
 
 2. Run the simulator binary:
 
-    ```bash
-    ./simulator
-    ```
+   ```bash
+   ./simulator
+   ```
 
 3. Go to [eslab1.pages.dev](https://eslab1.pages.dev)
 
 4. Use the web interface to control and monitor the simulation parameters.
-  You can start, stop, and adjust the simulation settings as needed.
+   You can start, stop, and adjust the simulation settings as needed.
 
 5. Interact with the simulator via the web interface
-  to observe the behavior of the inverted pendulum system
-  under different control conditions.
+   to observe the behavior of the inverted pendulum system
+   under different control conditions.
 
 Alternatively, you can run the simulator with the frontend server locally
 to control and monitor the simulation via a web interface:
 
-1. Download the frontend  from [github](https://github.com/linem-davton/inverted_pendulum_frontend/releases)
+1. Download the frontend from [github](https://github.com/linem-davton/inverted_pendulum_frontend/releases)
 
 2. Follow the instructions in the frontend README to start the frontend server.
 
@@ -137,6 +136,7 @@ to control and monitor the simulation via a web interface:
 
 By following these steps, you can run the simulator and control it
 using the web interface provided by the frontend server.
+
 ## Documentation
 
 Code documentation can be found at [eslab1doc](https://eslab1docs.pages.dev/)
