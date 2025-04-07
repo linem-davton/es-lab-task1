@@ -3,6 +3,9 @@ html/
 build/
 libs/
 doxygen-awesome-css/
-.cache/
-.vscode/
-.cache/
+**/.cache/
+**/.vscode/
+**/.cache/
+**/.pytest_cache/
+**/venv/
+**/__pycache__
