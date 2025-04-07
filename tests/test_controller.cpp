@@ -20,11 +20,19 @@ TEST(ControllerTest, IntegralTest) {
 }
 
 TEST(ControllerTest, ProportionalTest) {
-  // Derivative term should respond to change in error
+  // Proportiona term should respond to  magnitude of error
   PIDController controller;
   controller.update_params(1, 0, 0);
   double output = controller.output(0.0);
   EXPECT_NEAR(output, 0, 1e-6);
+}
+TEST(ControllerTest, ProportionalTest2) {
+  // Proportional should respond to error
+  PIDController controller;
+  controller.update_params(2.0, 0, 0);
+  double output1 = controller.output(10.0);
+  double output2 = controller.output(20.0);
+  EXPECT_GT(output2, output1);
 }
 
 TEST(ControllerTest, DerivativeTest) {
