@@ -6,8 +6,6 @@
  * header file. It provides the functionality for handling incoming HTTP
  * requests and managing communication with the inverted pendulum simulation.
  *
- * @author Utkarsh Raj
- * @date 10-April-2024
  */
 
 #include "server.h"

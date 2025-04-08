@@ -7,8 +7,6 @@
  * member functions for running the simulation, updating simulation parameters,
  * and resetting the simulator to its initial state.
  *
- * @author Utkarsh Raj
- * @date 10-April-2024
  */
 
 #include "simulator.h"

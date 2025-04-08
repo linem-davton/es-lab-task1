@@ -7,8 +7,6 @@
  * object, and communication server, and starts the simulation and communication
  * server threads.
  *
- * @author Utkarsh Raj
- * @date 10-April-2024
  */
 
 #include "controller.h"
