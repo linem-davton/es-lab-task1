@@ -44,7 +44,7 @@ public:
    * @param kd The derivative gain.
    * @param ki The integral gain.
    */
-  virtual void update_params(double kp, double kd, double ki) = 0;
+  virtual void update_params(double kp, double ki, double kd) = 0;
   /**
    * @brief Resets the controller to its initial state.
    *
@@ -112,7 +112,7 @@ public:
    * @param kd The new derivative gain.
    * @param ki The new integral gain.
    */
-  void update_params(double kp, double kd, double ki);
+  void update_params(double kp, double ki, double kd);
   /**
    * @brief Resets the PID controller to its initial state.
    *

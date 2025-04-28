@@ -24,7 +24,7 @@ double PIDController::output(double error) {
   return 0;
 }
 
-void PIDController::update_params(double kp_, double kd_, double ki_) {
+void PIDController::update_params(double kp_, double ki_, double kd_) {
   ///@todo Implement the update_params function for PID controller
 }
 void PIDController::reset() {

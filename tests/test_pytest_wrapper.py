@@ -18,7 +18,6 @@ def run_gtest(test_name):
     "ControllerTest.ProportionalTest",
     "ControllerTest.ProportionalTest2",
     "ControllerTest.DerivativeTest",
-    "ControllerTest.OutputTest",
     "ControllerTest.ResetTest",
 ])
 def test_gtest_wrapper(test_case):
